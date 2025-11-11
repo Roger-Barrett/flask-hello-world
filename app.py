@@ -45,7 +45,7 @@ def inserting():
     conn.close()
     return "Basketball Table Successfully Populated"
 
-@app.route('db_select')
+@app.route('/db_select')
 def selecting():
     conn = psycopg2.connect("postgresql://post_gres_test_db_user:mBZJ7jeiM34hnqMrIj44LCnvux1Zolwh@dpg-d49chr9r0fns738gbem0-a/post_gres_test_db")
     cur = conn.cursor()
