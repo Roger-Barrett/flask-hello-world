@@ -57,11 +57,11 @@ def selecting():
     response=""
     response=response+"<table>"
     for player in contents: 
-        response = response +"<tr"
+        response = response +"<tr>"
         for info in player:
             response = response + "<td>{}</td>".format(info)
         response = response + "</tr>"
-    response = response+"</tasble>"
+    response = response+"</table>"
     return response
 
 @app.route('/db_drop')
